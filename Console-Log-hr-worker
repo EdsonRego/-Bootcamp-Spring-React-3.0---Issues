@@ -1,0 +1,135 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.4.RELEASE)
+
+2022-01-19 14:25:02.185  INFO 5380 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8888
+2022-01-19 14:25:11.045  WARN 5380 --- [           main] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: None of labels [] found
+2022-01-19 14:25:11.054  INFO 5380 --- [           main] c.d.hrworker.HrWorkerApplication         : The following profiles are active: test
+2022-01-19 14:25:13.043  INFO 5380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2022-01-19 14:25:13.450  INFO 5380 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 393ms. Found 1 JPA repository interfaces.
+2022-01-19 14:25:13.714  WARN 5380 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2022-01-19 14:25:14.035  INFO 5380 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5280eb6f-a138-36e9-a5f5-dd5d10e9c57e
+2022-01-19 14:25:15.235  INFO 5380 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2022-01-19 14:25:15.272  INFO 5380 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-01-19 14:25:15.273  INFO 5380 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-01-19 14:25:15.761  INFO 5380 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-01-19 14:25:15.761  INFO 5380 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4660 ms
+2022-01-19 14:25:16.020  WARN 5380 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-19 14:25:16.020  INFO 5380 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-19 14:25:16.078  INFO 5380 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@754de353
+2022-01-19 14:25:16.206  INFO 5380 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-01-19 14:25:16.741  INFO 5380 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-01-19 14:25:16.755  INFO 5380 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2022-01-19 14:25:17.550  INFO 5380 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-19 14:25:17.839  INFO 5380 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-19 14:25:17.880  WARN 5380 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2022-01-19 14:25:17.880  INFO 5380 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-19 14:25:18.171  WARN 5380 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-19 14:25:18.227  INFO 5380 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2022-01-19 14:25:18.992  INFO 5380 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2022-01-19 14:25:19.580  INFO 5380 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-01-19 14:25:21.615  INFO 5380 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-19 14:25:21.635  INFO 5380 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-19 14:25:22.186  INFO 5380 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2022-01-19 14:25:22.310  WARN 5380 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2022-01-19 14:25:22.407  INFO 5380 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 17 endpoint(s) beneath base path '/actuator'
+2022-01-19 14:25:22.722  INFO 5380 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 55353 (http) with context path ''
+2022-01-19 14:25:22.724  INFO 5380 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 55353
+2022-01-19 14:25:22.735  INFO 5380 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2022-01-19 14:25:22.851  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2022-01-19 14:25:23.197  INFO 5380 --- [on(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-19 14:25:23.198  INFO 5380 --- [on(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-01-19 14:25:23.223  INFO 5380 --- [on(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2022-01-19 14:25:23.685  INFO 5380 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2022-01-19 14:25:23.686  INFO 5380 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.thoughtworks.xstream.core.util.Fields (file:/C:/Users/Edson%20Rego/.m2/repository/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar) to field java.util.TreeMap.comparator
+WARNING: Please consider reporting this to the maintainers of com.thoughtworks.xstream.core.util.Fields
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+2022-01-19 14:25:24.333  INFO 5380 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2022-01-19 14:25:24.333  INFO 5380 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2022-01-19 14:25:24.758  INFO 5380 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-01-19 14:25:25.067  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2022-01-19 14:25:25.067  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2022-01-19 14:25:25.068  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2022-01-19 14:25:25.068  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2022-01-19 14:25:25.068  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2022-01-19 14:25:25.068  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2022-01-19 14:25:25.068  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2022-01-19 14:25:25.430  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2022-01-19 14:25:25.577  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2022-01-19 14:25:25.583  INFO 5380 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2022-01-19 14:25:25.613  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1642613125588 with initial instances count: 4
+2022-01-19 14:25:25.617  INFO 5380 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application HR-WORKER with eureka with status UP
+2022-01-19 14:25:25.619  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1642613125619, current=UP, previous=STARTING]
+2022-01-19 14:25:25.626  INFO 5380 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HR-WORKER/hr-worker:a001fcd94ee95720fa9793076dc0c640: registering service...
+2022-01-19 14:25:25.709  INFO 5380 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HR-WORKER/hr-worker:a001fcd94ee95720fa9793076dc0c640 - registration status: 204
+2022-01-19 14:25:26.014  INFO 5380 --- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2022-01-19 14:25:26.670  INFO 5380 --- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2022-01-19 14:25:26.674  WARN 5380 --- [           main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.workerResource': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'test.config' in value "${test.config}"
+2022-01-19 14:25:26.697  INFO 5380 --- [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-19 14:25:26.698  INFO 5380 --- [           main] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2022-01-19 14:25:26.723  INFO 5380 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2022-01-19 14:25:26.724  INFO 5380 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-01-19 14:25:26.733  INFO 5380 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-01-19 14:25:26.735  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-01-19 14:25:29.755  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-01-19 14:25:29.772  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_HR-WORKER/hr-worker:a001fcd94ee95720fa9793076dc0c640 - deregister  status: 200
+2022-01-19 14:25:29.814  INFO 5380 --- [           main] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2022-01-19 14:25:30.053  INFO 5380 --- [           main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-01-19 14:25:30.056  INFO 5380 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2022-01-19 14:25:30.140  INFO 5380 --- [           main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-01-19 14:25:30.159 ERROR 5380 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.workerResource': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'test.config' in value "${test.config}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:363) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389) ~[spring-cloud-context-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186) ~[spring-cloud-context-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:360) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.eagerlyInitialize(RefreshScope.java:127) ~[spring-cloud-context-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.start(RefreshScope.java:118) ~[spring-cloud-context-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.onApplicationEvent(RefreshScope.java:112) ~[spring-cloud-context-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.cloud.context.scope.refresh.RefreshScope.onApplicationEvent(RefreshScope.java:66) ~[spring-cloud-context-2.2.5.RELEASE.jar:2.2.5.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
+	at com.devsuperior.hrworker.HrWorkerApplication.main(HrWorkerApplication.java:12) ~[classes/:na]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'test.config' in value "${test.config}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:918) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
+	... 28 common frames omitted
+
